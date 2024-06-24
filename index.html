@@ -341,12 +341,12 @@
 
       // Загрузка файлов
       var unityLoader = document.createElement("script");
-      unityLoader.src = "Build/Sprint.loader.js";
+      unityLoader.src = "Build/SprintTest.loader.js";
       unityLoader.onload = () => {
         createUnityInstance(canvas, {
-          dataUrl: "Build/Sprint.data.unityweb",
-          frameworkUrl: "Build/Sprint.framework.js.unityweb",
-          codeUrl: "Build/Sprint.wasm.unityweb",
+          dataUrl: "Build/SprintTest.data.unityweb",
+          frameworkUrl: "Build/SprintTest.framework.js.unityweb",
+          codeUrl: "Build/SprintTest.wasm.unityweb",
           streamingAssetsUrl: "StreamingAssets",
           companyName: "Tonbingo",
           productName: "SprintGame",
