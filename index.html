@@ -96,12 +96,6 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         window.Telegram.WebApp.expand();
-
-        app.onEvent('viewportChanged', () => {
-            if (!app.isExpanded) {
-                app.expand();
-            }
-        })
     </script>
 
 
