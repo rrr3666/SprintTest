@@ -96,15 +96,11 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         window.Telegram.WebApp.expand();
-
-        const app = window.Telegram.WebApp;
-        app.ready()
-        app.isClosingConfirmationEnabled = true;
     </script>
 
 
 </head>
-  <body>
+  <body style="position:fixed;">
     <canvas id="canvas" class="canvas" tabindex="-1"></canvas>
     <div class="loading_bg">
         <div class="loading">
