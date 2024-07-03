@@ -95,7 +95,13 @@
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        window.Telegram.WebApp.expand();
+        Telegram.WebApp.onEvent('viewportChanged', testhandler);
+
+        function testhandler(object) {
+            if (!this.isExpanded) {
+                this.expand()
+            }
+        }
     </script>
 
 
