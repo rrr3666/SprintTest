@@ -96,6 +96,10 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         window.Telegram.WebApp.expand();
+
+        const app = window.Telegram.WebApp;
+        app.ready()
+        app.isClosingConfirmationEnabled = true;
     </script>
 
 
