@@ -96,18 +96,11 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         window.Telegram.WebApp.expand();
-
-        const overflow = 100
-        document.body.style.overflowY = 'hidden'
-        document.body.style.marginTop = `${overflow}px`
-        document.body.style.height = window.innerHeight + overflow + "px"
-        document.body.style.paddingBottom = `${overflow}px`
-        window.scrollTo(0, overflow)
     </script>
 
 
 </head>
-  <body>
+  <body style="max-height:100%; overflow: hidden;">
     <canvas id="canvas" class="canvas" tabindex="-1"></canvas>
     <div class="loading_bg">
         <div class="loading">
